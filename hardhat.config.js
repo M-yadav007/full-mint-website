@@ -1,5 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
 require('dotenv').config();
+require("@nomiclabs/hardhat-etherscan");
 /*const dotenv=require("dotenv");
 dotenv.config();*/
 
@@ -23,6 +24,9 @@ module.exports = {
   },
   etherscan:
   {
-    apiKey:process.env.REACT_APP_ETHERSCAN_KEY
+    apiKey:
+    {
+      goerli:"XAQKDU14PGQU1EHI9ZN22Y6FKVH8TC7FUS"
+    }
   }
 };
